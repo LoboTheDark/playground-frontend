@@ -43,6 +43,14 @@ body {
   transition: background-color 220ms ease, color 220ms ease;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,   /* 0 oder 1 */
+    "wght" 400, /* 100..700 */
+    "GRAD" 0,   /* -50..200 */
+    "opsz" 24;  /* 20..48 */
+}
+
 /* smooth transition between theme change */
 .mat-toolbar,
 .mat-mdc-card,
