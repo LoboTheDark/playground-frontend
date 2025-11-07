@@ -94,4 +94,4 @@ docker compose up -d
 
 Andreas Dahm
 📧 andreas.dahm@gmail.com
-🌐 https://andreas-dahm.eu
+🌐 https://andreas-dahm.eu 
