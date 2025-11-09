@@ -1,13 +1,63 @@
 ﻿{
-  "APP": { "TITLE": "Playground" },
-  "WELCOME": {
-    "TITLE": "Willkommen 👋",
-    "SUB": "Angular 20 + Material",
-    "TEXT": "Das ist eine einfache Start-Komponente als Basis.",
-    "COUNTER": "Zähler",
-    "INC": "Inkrementieren",
-    "RESET": "Zurücksetzen"
+  "APP": {
+    "TITLE": "Playground",
+    "COPYRIGHT": "Bilder urheberrechtlich geschützt, keine Nutzung ohne Zustimmung!"
+  },
+  "TOPBAR": {
+    "ABOUT": "Über mich",
+    "CONTACT": "Kontakt",
+    "PROJECTS": "Projekte",
+    "HOBBY": "Hobbies",
+    "SETTINGS": "Einstellungen",
+    "LANGUAGE": "Sprache",
+    "APPEARANCE": "Darstellung"
   },
   "THEME": { "LIGHT": "Hell", "DARK": "Dunkel" },
-  "LANG": { "LABEL": "Sprache", "EN": "Englisch", "DE": "Deutsch" }
+  "LANG": { "LABEL": "Sprache", "EN": "Englisch", "DE": "Deutsch" },
+  "ABOUT": {
+    "ALT": { "PROFILE": "Profilfoto von Andreas Dahm" },
+    "HELLO": "Hallo, ich bin Andreas Dahm.",
+    "LEAD": "Bereits in meiner Ausbildung zum Fachinformatiker hat mich fasziniert, wie man durch Code komplexe Probleme elegant lösen kann. Nach meinem Studium der Angewandten Informatik an der FH Bingen konnte ich diese Begeisterung in verschiedensten Projekten vertiefen – von 3D-Simulationen bis zu modernen Web-Applikationen. Heute arbeite ich als Senior Software Developer und Architekt mit Fokus auf Java, Angular und DevOps. Danke, dass du vorbeischaust!",
+    "ROLE": "Senior Software Entwickler / Full-Stack Entwickler / Softwarearchitekt",
+    "LOCATION": "München · Remote",
+    "DOWNLOAD_CV": "Lebenslauf herunterladen",
+    "VIEW_PROJECTS": "Projekte ansehen",
+    "CONTACT_ME": "Kontaktiere mich",
+    "SECTION": {
+      "SKILLS": "Fähigkeiten & Stack",
+      "PRIMARY": "Schwerpunkte",
+      "TOOLSET": "Toolset",
+      "EXPERIENCE": "Erfahrung"
+    },
+    "SKILLS": {
+      "JAVA": "Java 8/Java 21+",
+      "SPRING": "Spring Boot 2/3",
+      "ANGULAR": "Angular 20+",
+      "DOCKER": "Docker",
+      "UNITY": "Unity",
+      "PYTHON": "Python",
+      "CSHARP": "C#",
+      "TYPESCRIPT": "TypeScript"
+    },
+    "TOOLS": {
+      "GIT": "Git",
+      "GITHUB": "Github",
+      "JENKINS": "Jenkins",
+      "K8S": "Kubernetes / k3d",
+      "POSTGRES": "PostgreSQL",
+      "MONGO": "MongoDB",
+      "GRAFANA": "Grafana/Prometheus"
+    },
+    "XP": {
+      "T1": {
+        "COMPANY": "Teraport GmbH",
+        "ROLE": "Senior Software Developer / Architect",
+        "TIME": "Feb. 2024 – heute",
+        "HIGHLIGHTS": {
+          "P1": "Architecture and implementation of database connectivity using Hibernate 6.x.",
+          "P2": "Design and development of a full-stack web application for collision analysis (Angular + Spring Boot + Docker)."
+        }
+      }
+    }
+  }
 }

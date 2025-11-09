@@ -1,0 +1,110 @@
+<section class="about">
+  <mat-card class="hero">
+    <div class="photo">
+      <img
+        [ngSrc]="AssetsConstants.ME"
+        width="320" height="400"
+        alt="{{ 'ABOUT.ALT.PROFILE' | translate }}"
+        draggable="false"
+        oncontextmenu="return false;"
+        priority />
+    </div>
+
+    <div class="intro">
+      <h1>{{ 'ABOUT.HELLO' | translate }}</h1>
+      <p class="lead">
+        {{ 'ABOUT.LEAD' | translate }}
+      </p>
+
+      <div class="meta">
+        <div class="row">
+          <mat-icon aria-hidden="true">work</mat-icon>
+          <span>{{ 'ABOUT.ROLE' | translate }}</span>
+        </div>
+        <div class="row">
+          <mat-icon aria-hidden="true">location_on</mat-icon>
+          <span>{{ 'ABOUT.LOCATION' | translate }}</span>
+        </div>
+        <div class="row">
+            <mat-icon aria-hidden="true">email</mat-icon>
+            <a href="" (click)="openMail($event)">
+              {{ 'ABOUT.CONTACT_ME' | translate }}
+            </a>
+        </div>
+        <div class="row">
+          <mat-icon aria-hidden="true">link</mat-icon>
+          <a href="{{UrlConstants.GIT_HUB}}" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="{{UrlConstants.LINKED_IN}}" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="actions">
+        <a mat-flat-button color="primary" [href]="cvHref" target="_blank" rel="noopener">
+          <mat-icon>picture_as_pdf</mat-icon>
+          {{ 'ABOUT.DOWNLOAD_CV' | translate }}
+        </a>
+        <a mat-stroked-button routerLink="/projects">
+          <mat-icon>work_outline</mat-icon>
+          {{ 'ABOUT.VIEW_PROJECTS' | translate }}
+        </a>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card class="skills">
+    <h2>{{ 'ABOUT.SECTION.SKILLS' | translate }}</h2>
+    <div class="chip-groups">
+      <div>
+        <h3>{{ 'ABOUT.SECTION.PRIMARY' | translate }}</h3>
+        <mat-chip-set aria-label="Primary skills">
+          @for (s of primarySkills; track primarySkills)          {
+            <mat-chip >{{ s | translate }}</mat-chip>
+          }
+        </mat-chip-set>
+      </div>
+
+      <div>
+        <h3>{{ 'ABOUT.SECTION.TOOLSET' | translate }}</h3>
+        <mat-chip-set aria-label="Toolset">
+          @for (t of toolset; track toolset)          {
+            <mat-chip>{{ t | translate }}</mat-chip>
+          }
+        </mat-chip-set>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card class="experience">
+    <h2>{{ 'ABOUT.SECTION.EXPERIENCE' | translate }}</h2>
+
+    <div class="xp-list">
+      <div class="xp-item">
+        <div class="xp-head">
+          <strong>{{ 'ABOUT.XP.T1.ROLE' | translate }}</strong>
+          <span class="time">{{ 'ABOUT.XP.T1.TIME' | translate }}</span>
+        </div>
+        <div class="xp-sub">{{ 'ABOUT.XP.T1.COMPANY' | translate }}</div>
+        <ul>
+          <li>{{ 'ABOUT.XP.T1.P1' | translate }}</li>
+          <li>{{ 'ABOUT.XP.T1.P2' | translate }}</li>
+          <li>{{ 'ABOUT.XP.T1.P3' | translate }}</li>
+        </ul>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <div class="xp-item">
+        <div class="xp-head">
+          <strong>{{ 'ABOUT.XP.T2.ROLE' | translate }}</strong>
+          <span class="time">{{ 'ABOUT.XP.T2.TIME' | translate }}</span>
+        </div>
+        <div class="xp-sub">{{ 'ABOUT.XP.T2.COMPANY' | translate }}</div>
+        <ul>
+          <li>{{ 'ABOUT.XP.T2.P1' | translate }}</li>
+          <li>{{ 'ABOUT.XP.T2.P2' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </mat-card>
+</section>

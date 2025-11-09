@@ -1,6 +1,6 @@
 ﻿import { Injectable, inject, signal } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import {Constants} from '../constants/Constants';
+import {LocalStoreConstants} from '../constants/LocalStoreConstants';
 
 type Lang = 'de' | 'en';
 
@@ -19,12 +19,12 @@ export class LanguageService {
   use(l: Lang) {
     this.lang.set(l);
     this.translate.use(l);
-    try { localStorage.setItem(Constants.LANGUAGE_KEY, l); } catch {}
+    try { localStorage.setItem(LocalStoreConstants.LANGUAGE_KEY, l); } catch {}
   }
 
   private getInitial(): Lang {
     try {
-      const stored = localStorage.getItem(Constants.LANGUAGE_KEY) as Lang | null;
+      const stored = localStorage.getItem(LocalStoreConstants.LANGUAGE_KEY) as Lang | null;
       if (stored === 'de' || stored === 'en') return stored;
     } catch {}
     const browser = (navigator.language || 'en').toLowerCase();

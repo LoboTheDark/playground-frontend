@@ -1,0 +1,86 @@
+.about {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Hero block: Photo + Intro */
+.hero {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.25rem;
+  border-radius: 16px;
+  background: var(--app-card-background);
+
+  .photo {
+    align-items:flex-start; justify-content:center;
+    img {
+      display:block;
+      width: 100%; height: auto;
+      max-width: 220px;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.25);
+      object-fit: cover;
+    }
+  }
+
+  .intro {
+    display:flex; flex-direction:column; gap:.5rem;
+    h1 { margin-top: .25rem }
+    .lead { opacity:.9; margin: .25rem 0 0.5rem; }
+
+    .meta {
+      display:flex; flex-direction:column; gap:.25rem;
+      .row {
+        display:flex; align-items:center; gap:.4rem;
+        a { color: inherit; }
+      }
+    }
+
+    .actions {
+      display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;  margin-bottom: .25rem;
+      .mat-icon { margin-right:.25rem; }
+    }
+  }
+}
+
+/* Skills block */
+.skills {
+  border-radius: 16px;
+  background: var(--app-card-background);
+  h2 { margin-top: .25rem; margin-left: .25rem; }
+  .chip-groups {
+    margin-left: .25rem;
+    display:grid; gap:1rem;
+    grid-template-columns: 1fr 1fr;
+    h3 { margin: .2rem 0 .4rem; font-size: .95rem; opacity:.85; }
+    mat-chip-set {
+      display:flex; flex-wrap:wrap; gap:.4rem;
+    }
+  }
+}
+
+/* Experience block */
+.experience {
+  border-radius: 16px;
+  background: var(--app-card-background);
+  h2 { margin-top: .25rem;margin-left: .25rem; }
+  .xp-list {
+    margin-left: .25rem;
+    display: grid; gap: .75rem;
+  }
+  .xp-item {
+    .xp-head {
+      display:flex; align-items:baseline; gap:.5rem;
+      .time { opacity:.75; font-size:.9rem; }
+    }
+    .xp-sub { opacity:.9; margin-bottom:.25rem; }
+    ul { margin: .25rem 0 .5rem 1.15rem; }
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero .photo { justify-content: flex-start; }
+  .skills .chip-groups { grid-template-columns: 1fr; }
+}
