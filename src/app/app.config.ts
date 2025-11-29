@@ -6,7 +6,7 @@ import {provideAnimations} from '@angular/platform-browser/animations';
 import {provideHttpClient} from '@angular/common/http';
 import {provideTranslateService} from '@ngx-translate/core';
 import {provideTranslateHttpLoader} from '@ngx-translate/http-loader';
-import {Constants} from './constants/Constants';
+import {LocalStoreConstants} from './constants/LocalStoreConstants';
 
 
 const INITIAL_LANG = getInitialLang();
@@ -30,7 +30,7 @@ export const appConfig: ApplicationConfig = {
 };
 
 function getInitialLang(): string {
-  const saved = localStorage.getItem(Constants.LANGUAGE_KEY);
+  const saved = localStorage.getItem(LocalStoreConstants.LANGUAGE_KEY);
   if (saved) return saved;
   const nav = typeof navigator !== 'undefined' ? navigator.language?.toLowerCase() : 'en';
   return nav?.startsWith('de') ? 'de' : 'en';

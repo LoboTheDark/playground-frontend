@@ -1,13 +1,219 @@
 ﻿{
-  "APP": { "TITLE": "Playground" },
-  "WELCOME": {
-    "TITLE": "Willkommen 👋",
-    "SUB": "Angular 20 + Material",
-    "TEXT": "Das ist eine einfache Start-Komponente als Basis.",
-    "COUNTER": "Zähler",
-    "INC": "Inkrementieren",
-    "RESET": "Zurücksetzen"
+  "APP": {
+    "TITLE": "Playground",
+    "COPYRIGHT": "Bilder urheberrechtlich geschützt, keine Nutzung ohne Zustimmung!"
+  },
+  "TOPBAR": {
+    "ABOUT": "Über mich",
+    "CONTACT": "Kontakt",
+    "PROJECTS": "Projekte",
+    "HOBBY": "Hobbies",
+    "SETTINGS": "Einstellungen",
+    "LANGUAGE": "Sprache",
+    "APPEARANCE": "Darstellung"
   },
   "THEME": { "LIGHT": "Hell", "DARK": "Dunkel" },
-  "LANG": { "LABEL": "Sprache", "EN": "Englisch", "DE": "Deutsch" }
+  "LANG": { "LABEL": "Sprache", "EN": "Englisch", "DE": "Deutsch" },
+  "ABOUT": {
+    "ALT": { "PROFILE": "Profilfoto von Andreas Dahm" },
+    "HELLO": "Hallo, ich bin Andreas Dahm.",
+    "LEAD": "Bereits in meiner Ausbildung zum Fachinformatiker hat mich fasziniert, wie man durch Code komplexe Probleme elegant lösen kann. Nach meinem Studium der Angewandten Informatik an der FH Bingen konnte ich diese Begeisterung in verschiedensten Projekten vertiefen – von 3D-Simulationen bis zu modernen Web-Applikationen. Heute arbeite ich als Senior Software Developer und Architekt mit Fokus auf Java, Angular und DevOps. Danke, dass du vorbeischaust!",
+    "ROLE": "Senior Software Entwickler / Full-Stack Entwickler / Softwarearchitekt",
+    "LOCATION": "München · Remote",
+    "DOWNLOAD_CV": "Lebenslauf herunterladen",
+    "VIEW_PROJECTS": "Projekte ansehen",
+    "CONTACT_ME": "Kontaktiere mich",
+    "SECTION": {
+      "SKILLS": "Fähigkeiten & Stack",
+      "PRIMARY": "Schwerpunkte",
+      "TOOLSET": "Toolset",
+      "EXPERIENCE": "Erfahrung",
+      "PROJECTS": "Projekte",
+      "EDUCATION": "Ausbildung"
+    },
+    "SKILLS": {
+      "JAVA": "Java 8/Java 21+",
+      "SPRING": "Spring Boot 2/3",
+      "ANGULAR": "Angular 20+",
+      "DOCKER": "Docker",
+      "UNITY": "Unity",
+      "PYTHON": "Python",
+      "CSHARP": "C#",
+      "TYPESCRIPT": "TypeScript"
+    },
+    "TOOLS": {
+      "GIT": "Git",
+      "GITHUB": "Github",
+      "GITLAB": "Gitlab",
+      "JENKINS": "Jenkins",
+      "K8S": "Kubernetes / k3d",
+      "POSTGRES": "PostgreSQL",
+      "MONGO": "MongoDB",
+      "GRAFANA": "Grafana/Prometheus"
+    },
+    "XP": {
+      "COMPANY8": {
+        "COMPANY": "Teraport GmbH",
+        "ROLE": "Senior Software Developer / Architect",
+        "TIME": "Feb. 2024 – heute",
+        "HIGHLIGHTS": {
+          "P1": "Architektur und Implementierung der Datenbankanbindung mit Hibernate 6.x.",
+          "P2": "Konzeption und Entwicklung einer Full-Stack-Webanwendung für Kollisionsanalysen (Angular + Spring Boot + Docker).",
+          "P3": "Entwicklung eines Kostenanalysetools mit dem Namen MIDO."
+        }
+      },
+      "COMPANY7": {
+        "COMPANY": "ColorDigital GmbH",
+        "ROLE": "Lead Software Developer",
+        "TIME": "März 2023 – Dez. 2023",
+        "HIGHLIGHTS": {
+          "P1": "Planung einer neuen Cloud-Architektur zur Migration eines umfangreichen Legacy-Monolithen in eine moderne Microservice-Plattform.",
+          "P2": "Leitung eines Teams von drei bis vier Backend-Entwickler:innen.",
+          "P3": "Zusammenarbeit mit Partnern und Kund:innen bei der Integration ihrer Systeme in die DMIx-Cloud."
+        }
+      },
+      "COMPANY6": {
+        "COMPANY": "ColorDigital GmbH",
+        "ROLE": "Senior Software Developer",
+        "TIME": "März 2021 – März 2023",
+        "HIGHLIGHTS": {
+          "P1": "Arbeit an der DMIx-Core-Cloud, darunter die Implementierung einer Elasticsearch-basierten Echtzeit-Suchfunktion.",
+          "P2": "Implementierung des neuen Browser-Tools „Moodboard“ (Node.js + Vue.js).",
+          "P3": "Entwicklung von „PAX“, einem Tool für den Datenaustausch zwischen der DMIx-Cloud und PLM/ERP-Systemen, inkl. CI/CD-Integration."
+        }
+      },
+      "COMPANY5": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Teamleitung",
+        "TIME": "Sep. 2015 – Feb. 2021",
+        "HIGHLIGHTS": {
+          "P1": "Teamleitung der Vidya-Softwareabteilung, inkl. Personalverantwortung und Bewerbungsprozesse.",
+          "P2": "Leitung mehrerer Projekte mit externen Partnern und Freelancer:innen.",
+          "P3": "Steuerung strategischer Initiativen im Bereich 3D-Softwareentwicklung."
+        }
+      },
+      "COMPANY4": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Software Engineer",
+        "TIME": "Apr. 2010 – Feb. 2021",
+        "HIGHLIGHTS": {
+          "P1": "Arbeit an Kerntechnologien wie Algorithmen, Simulation, Rendering und Kollisions­erkennung.",
+          "P2": "Einsatz verschiedener Technologien, u. a. Java, OpenCL, OpenGL, GLSL-Shader, C++ und REST-Schnittstellen.",
+          "P3": "Mitarbeit an nationalen und internationalen Forschungsprojekten (EU7 und ZIM)."
+        }
+      },
+      "COMPANY3": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Praktikum und Diplomarbeit",
+        "TIME": "Apr. 2009 – Apr. 2010",
+        "HIGHLIGHTS": {
+          "P1": "Implementierung produktiver Funktionen in der Echtzeit-Kleidersimulationssoftware Vidya.",
+          "P2": "Durchführung von Recherchen und Literaturstudien für die Diplomarbeit.",
+          "P3": "Erfolgreiche Umsetzung des Diplomthemas in Vidya."
+        }
+      },
+      "COMPANY2": {
+        "COMPANY": "TH Bingen (University of Applied Sciences)",
+        "ROLE": "Tutor für Grundlagen der Java-Programmierung",
+        "TIME": "Apr. 2008 – Aug. 2008",
+        "HIGHLIGHTS": {
+          "P1": "Erstellung praktischer und theoretischer Lehrmaterialien.",
+          "P2": "Durchführung einer 20-stündigen Vorlesungsreihe für den Bioinformatik-Studiengang.",
+          "P3": "Unterstützung bei praktischen Programmierübungen."
+        }
+      },
+      "COMPANY1": {
+        "COMPANY": "TH Bingen (University of Applied Sciences)",
+        "ROLE": "Wissenschaftliche Hilfskraft",
+        "TIME": "Okt. 2007 – Apr. 2008",
+        "HIGHLIGHTS": {
+          "P1": "Evaluation verschiedener Web-2.0-Technologien.",
+          "P2": "Implementierung einer Java-basierten Schnittstelle zu Microsoft Excel.",
+          "P3": "Integration des MIT-Exhibit-Frameworks und Vorbereitung für die CeBIT 2008."
+        }
+      },
+      "COMPANY0": {
+        "COMPANY": "Chamaeleon AG",
+        "ROLE": "Ausbildung Fachinformatiker Anwendungsentwicklung",
+        "TIME": "Jul. 2002 – Jun. 2005",
+        "HIGHLIGHTS": {
+          "P1": "Entwicklung in PERL, PHP und ASP.",
+          "P2": "Portierung, Wartung und Reengineering von bestender Software.",
+          "P3": "Regelmäßige Durchführung von Systemtests und Qualitätskontrollen, sowie deren Dokumentation."
+        }
+      }
+    },
+    "PROJECT": {
+      "P2": {
+        "TITLE": "Playground",
+        "DESCRIPTION": "Dieses Projekt ist, wie der Name schon sagt, ein persönlicher Playground, der im Laufe der Zeit wachsen soll. Es präsentiert verschiedene private Projekte, an denen ich arbeite, und dokumentiert deren Fortschritt, zentrale Ideen und wichtige Meilensteine.",
+        "LINK_EXTERNAL": "andreas-dahm.eu",
+        "LINK_INTERNAL": "Projektdetails",
+        "HIGHLIGHTS": {
+          "P1": "Einsatz moderner Technologien und CI/CD-Pipelines (Angular 20+, Spring Boot 4, GitHub).",
+          "P2": "Präsentation persönlicher Projekte und kontinuierliche Verbesserung algorithmischer Fähigkeiten.",
+          "P3": "Vertiefung von JavaScript/TypeScript-, Angular- und Spring-Boot-Kenntnissen durch praktisches Arbeiten."
+        }
+      },
+      "P1": {
+        "TITLE": "El Mucho",
+        "DESCRIPTION": "Dies ist mein erstes veröffentlichtes Spiel auf Steam. Ich habe es gemeinsam mit meinem Bruder entwickelt und damit eines meiner persönlichen Ziele erreicht: ein eigenes Videospiel zu erstellen und zu veröffentlichen.",
+        "LINK_EXTERNAL": "Steam Store",
+        "LINK_INTERNAL": "Projektdetails",
+        "HIGHLIGHTS": {
+          "P1": "Veröffentlichung eines Spiels auf Steam und Integration der Steam-API.",
+          "P2": "Konzeption, Planung und vollständige Entwicklung eines eigenen Spiels.",
+          "P3": "Implementierung komplexer Algorithmen wie einer eigenen A*-Pfadfindungslogik und Spiel-KI."
+        }
+      },
+      "P0": {
+        "TITLE": "Game Jams",
+        "DESCRIPTION": "Dieser Bereich zeigt einige meiner bisherigen Game-Jam-Beiträge. Game Jams sind eine großartige Möglichkeit, neue Spielideen auszuprobieren und schnell zu überprüfen, ob ein Game-Loop funktioniert. Die engen Zeitvorgaben fördern den Fokus, es ist faszinierend, was man in so kurzer Zeit alles schaffen kann.",
+        "LINK_EXTERNAL": "Itch.io Sammlung",
+        "LINK_INTERNAL": "Projektdetails",
+        "HIGHLIGHTS": {
+          "P1": "Planung eines realistischen Projektumfangs mit einem Team, der innerhalb von 48 Stunden umsetzbar ist.",
+          "P2": "Lernen, fokussiert und effizient unter strengen Zeitvorgaben zu arbeiten.",
+          "P3": "Die Freude zu erleben, in kurzer Zeit ein spielbares Projekt zu erstellen und andere damit spielen zu sehen."
+        }
+      }
+    },
+    "EDUCATION": {
+      "E6": {
+        "WHERE": "FH Bingen (University of Applied Sciences)",
+        "WHEN": "2006 - 2010",
+        "WHAT": "Diplom (FH), Angewandte Informatik (Schnitt 1.4)"
+      },
+      "E5": {
+        "WHERE": "FH Koblenz (University of Applied Sciences)",
+        "WHEN": "2005 - 2006",
+        "WHAT": "1 Semester Ingenieurinformatik"
+      },
+      "E4": {
+        "WHERE": "BBS Montabaur",
+        "WHEN": "2002 - 2005",
+        "WHAT": "Ausbildung zum Fachinformatiker Anwendungsentwicklung"
+      },
+      "E3": {
+        "WHERE": "BBS Andernach - Höhere Berufsbachschule (Informatik)",
+        "WHEN": "2000 - 2002",
+        "WHAT": "Fachhochschulreife"
+      },
+      "E2": {
+        "WHERE": "BBS Andernach - Berufsfachschule Technik (E-Technik)",
+        "WHEN": "1998 - 2000",
+        "WHAT": "Realschulabschluss"
+      },
+      "E1": {
+        "WHERE": "Hauptschule Hinter Burg Mayen (Albert Schweitzer Realschule plus)",
+        "WHEN": "1995 - 1998 ",
+        "WHAT": "Hauptschulabschluss"
+      },
+      "E0": {
+        "WHERE": "Albert Schweitzer Realschule Mayen",
+        "WHEN": "1993 - 1995",
+        "WHAT": "Kein Abschluss. Wechsel zur Hauptschule"
+      }
+    }
+  }
 }

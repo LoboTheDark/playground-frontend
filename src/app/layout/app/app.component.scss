@@ -1,0 +1,10 @@
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.app-surface {
+  background: var(--app-bg);
+  color: var(--app-fg);
+  transition: background-color 220ms ease, color 220ms ease;
+}
+.foot {
+  border-top: 1px solid rgba(0,0,0,.08);
+  padding: 1rem; text-align: center; opacity: .8;
+}

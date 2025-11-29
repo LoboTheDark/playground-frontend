@@ -1,0 +1,175 @@
+<section class="about">
+  <mat-card class="hero">
+    <div class="photo">
+      <img
+        [ngSrc]="AssetsConstants.ME"
+        width="320" height="400"
+        alt="{{ 'ABOUT.ALT.PROFILE' | translate }}"
+        draggable="false"
+        oncontextmenu="return false;"
+        priority />
+    </div>
+
+    <div class="intro">
+      <h1>{{ 'ABOUT.HELLO' | translate }}</h1>
+      <p class="lead">
+        {{ 'ABOUT.LEAD' | translate }}
+      </p>
+
+      <div class="meta">
+        <div class="row">
+          <mat-icon aria-hidden="true">work</mat-icon>
+          <span>{{ 'ABOUT.ROLE' | translate }}</span>
+        </div>
+        <div class="row">
+          <mat-icon aria-hidden="true">location_on</mat-icon>
+          <span>{{ 'ABOUT.LOCATION' | translate }}</span>
+        </div>
+        <div class="row">
+            <mat-icon aria-hidden="true">email</mat-icon>
+            <a href="" (click)="openMail($event)">
+              {{ 'ABOUT.CONTACT_ME' | translate }}
+            </a>
+        </div>
+        <div class="row">
+          <mat-icon aria-hidden="true">link</mat-icon>
+          <a href="{{UrlConstants.GIT_HUB}}" target="_blank" rel="noopener">GitHub</a>
+          <span>·</span>
+          <a href="{{UrlConstants.LINKED_IN}}" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card class="skills">
+    <h2>{{ 'ABOUT.SECTION.SKILLS' | translate }}</h2>
+    <div class="chip-groups">
+      <div>
+        <h3>{{ 'ABOUT.SECTION.PRIMARY' | translate }}</h3>
+        <mat-chip-set aria-label="Primary skills">
+          @for (s of primarySkills; track primarySkills)          {
+            <mat-chip >{{ s | translate }}</mat-chip>
+          }
+        </mat-chip-set>
+      </div>
+
+      <div>
+        <h3>{{ 'ABOUT.SECTION.TOOLSET' | translate }}</h3>
+        <mat-chip-set aria-label="Toolset">
+          @for (t of toolset; track toolset)          {
+            <mat-chip>{{ t | translate }}</mat-chip>
+          }
+        </mat-chip-set>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card class="experience">
+    <h2>{{ 'ABOUT.SECTION.EXPERIENCE' | translate }}</h2>
+    <div class="xp-list">
+      @for (entry of xpKeys; track entry) {
+        <div class="xp-item">
+          <div class="xp-head-grid">
+            <div class="logo-wrap">
+              <img
+                src="{{entry.logo}}"
+                alt=""
+                class="company-logo"
+                aria-hidden="true"
+              />
+            </div>
+            <div class="head-row">
+              <strong>{{ (entry.key + '.ROLE') | translate }}</strong>
+              <span class="time">{{ (entry.key + '.TIME') | translate }}</span>
+            </div>
+
+            <div class="company-row">
+              {{ (entry.key + '.COMPANY') | translate }}
+            </div>
+
+          </div>
+          <div class="highlights">
+            <ul>
+              <li>{{ entry.key + '.HIGHLIGHTS.P1' | translate }}</li>
+              <li>{{ entry.key + '.HIGHLIGHTS.P2' | translate }}</li>
+              <li>{{ entry.key + '.HIGHLIGHTS.P3' | translate }}</li>
+            </ul>
+          </div>
+        </div>
+
+        @if(entry.key !== xpKeys.at(xpKeys.length-1)?.key)
+        {
+          <mat-divider></mat-divider>
+        }
+      }
+    </div>
+  </mat-card>
+  <mat-card class="projects">
+    <h2>{{ 'ABOUT.SECTION.PROJECTS' | translate }}</h2>
+
+    <div class="xp-list">
+      @for (entry of projectKeys; track entry) {
+      <div class="xp-item">
+        <div class="head-row">
+          <strong>{{ (entry.key + '.TITLE') | translate }}</strong>
+        </div>
+        <div class="company-row">
+          {{ (entry.key + '.DESCRIPTION') | translate }}
+        </div>
+        <div class="link-row">
+          <a class="link-with-icon"
+             href="{{entry.externalLink}}"
+             target="_blank"
+             rel="noopener noreferrer">
+            <mat-icon>open_in_new</mat-icon>
+            {{ (entry.key + '.LINK_EXTERNAL') | translate }}
+          </a>
+        </div>
+        <div class="link-row">
+          <a class="link-with-icon"
+             href="{{entry.internalLink}}"
+             rel="noopener noreferrer">
+            <mat-icon>link</mat-icon>
+            {{ (entry.key + '.LINK_INTERNAL') | translate }}
+          </a>
+        </div>
+        <div class="highlights-noMargin">
+          <ul>
+            <li>{{ entry.key + '.HIGHLIGHTS.P1' | translate }}</li>
+            <li>{{ entry.key + '.HIGHLIGHTS.P2' | translate }}</li>
+            <li>{{ entry.key + '.HIGHLIGHTS.P3' | translate }}</li>
+          </ul>
+        </div>
+      </div>
+
+      @if(entry.key !== projectKeys.at(projectKeys.length-1)?.key)
+      {
+        <mat-divider></mat-divider>
+      }
+    }
+    </div>
+  </mat-card>
+
+  <mat-card class="education">
+    <h2>{{ 'ABOUT.SECTION.EDUCATION' | translate }}</h2>
+
+    <div class="xp-list">
+      <div class="xp-item">
+        @for (entry of educationKeys; track entry) {
+          <div class="head-row">
+            <strong>{{ (entry.key + '.WHERE') | translate }}</strong>
+            <span class="time">{{ (entry.key + '.WHEN') | translate }}</span>
+          </div>
+          <div class="company-row">
+            {{ (entry.key + '.WHAT') | translate }}
+          </div>
+
+          @if(entry.key !== educationKeys.at(educationKeys.length-1)?.key)
+          {
+            <mat-divider style="margin-top: .5rem; margin-bottom: .5rem"></mat-divider>
+          }
+        }
+      </div>
+    </div>
+  </mat-card>
+</section>

@@ -1,7 +1,7 @@
 ﻿import { Injectable, effect, inject, signal } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { OverlayContainer } from '@angular/cdk/overlay';
-import {Constants} from '../constants/Constants';
+import {LocalStoreConstants} from '../constants/LocalStoreConstants';
 
 type Theme = 'light' | 'dark';
 
@@ -20,13 +20,13 @@ export class ThemeService {
       body.classList.toggle('dark', isDark);
       overlayEl.classList.toggle('dark', isDark);
 
-      try { localStorage.setItem(Constants.THEME_KEY, this.theme()); } catch {}
+      try { localStorage.setItem(LocalStoreConstants.THEME_KEY, this.theme()); } catch {}
     });
 
     try {
       const mm = globalThis.matchMedia('(prefers-color-scheme: dark)');
       mm.addEventListener('change', e => {
-        const stored = localStorage.getItem(Constants.THEME_KEY) as Theme | null;
+        const stored = localStorage.getItem(LocalStoreConstants.THEME_KEY) as Theme | null;
         if (!stored) this.setTheme(e.matches ? 'dark' : 'light');
       });
     } catch {}
@@ -37,7 +37,7 @@ export class ThemeService {
 
   private getInitialTheme(): Theme {
     try {
-      const stored = localStorage.getItem(Constants.THEME_KEY) as Theme | null;
+      const stored = localStorage.getItem(LocalStoreConstants.THEME_KEY) as Theme | null;
       if (stored === 'dark' || stored === 'light') return stored;
     } catch {}
     try {

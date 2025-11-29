@@ -1,5 +1,5 @@
 ﻿import { Injectable, NgZone, signal } from '@angular/core';
-import {Constants} from '../constants/Constants';
+import {LocalStoreConstants} from '../constants/LocalStoreConstants';
 
 
 @Injectable({ providedIn: 'root' })
@@ -20,13 +20,13 @@ export class ReloadService {
 
 
   private informListeners(e: StorageEvent, zone: NgZone) {
-    if (e.key === Constants.LANGUAGE_KEY) {
+    if (e.key === LocalStoreConstants.LANGUAGE_KEY) {
       zone.run(() => this._languageChangedTick.update(v => v + 1));
     }
   }
 
   bumpLanguageChanged(): void {
     this._reloadTick.update(v => v + 1);
-    localStorage.setItem(Constants.RELOAD_ALL_LANG_LISTENER_KEY, String(Date.now()));
+    localStorage.setItem(LocalStoreConstants.RELOAD_ALL_LANG_LISTENER_KEY, String(Date.now()));
   }
 }

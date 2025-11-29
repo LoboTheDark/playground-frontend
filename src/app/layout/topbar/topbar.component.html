@@ -1,0 +1,58 @@
+<mat-toolbar class="topbar" color="primary" (keydown)="onKeydown($event)">
+  <a class="brand" routerLink="/">
+    <img class="logo-dot"
+         src="{{AssetsConstants.LOGO}}"
+         alt="" aria-hidden="true"
+         draggable="false"
+         oncontextmenu="return false;"
+    >
+    <span class="brand-text">{{ 'APP.TITLE' | translate }}</span>
+  </a>
+
+  <nav class="nav">
+    <a routerLink="/about" mat-button>{{ 'TOPBAR.ABOUT' | translate }}</a>
+    <a routerLink="/projects" mat-button>{{ 'TOPBAR.PROJECTS' | translate }}</a>
+    <a routerLink="/projects" mat-button>{{ 'TOPBAR.HOBBY' | translate }}</a>
+    <a routerLink="/projects" mat-button>{{ 'TOPBAR.CONTACT' | translate }}</a>
+  </nav>
+
+  <span class="spacer"></span>
+
+  <!-- Settings: Sprache + Theme -->
+  <button mat-icon-button [matMenuTriggerFor]="settingsMenu" aria-label="Open settings" matTooltip="{{ 'TOPBAR.SETTINGS' | translate }}">
+    <mat-icon>tune</mat-icon>
+  </button>
+
+  <mat-menu #settingsMenu="matMenu" xPosition="before">
+    <div class="menu-section">
+      <div class="menu-title">{{ 'TOPBAR.LANGUAGE' | translate }}</div>
+      <button mat-menu-item (click)="setLang('de')">
+        <img class="flag-icon" src="{{AssetsConstants.FLAG_DE}}" alt="" aria-hidden="true">
+        <span>{{ 'LANG.DE' | translate }}</span>
+        @if (lang.lang() === 'de')
+        {
+          <mat-icon >check</mat-icon>
+        }
+      </button>
+      <button mat-menu-item (click)="setLang('en')">
+        <img class="flag-icon" src="{{AssetsConstants.FLAG_EN}}" alt="" aria-hidden="true">
+        <span>{{ 'LANG.EN' | translate }}</span>
+        @if (lang.lang() === 'en')
+        {
+          <mat-icon>check</mat-icon>
+        }
+      </button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="menu-section">
+      <div class="menu-title">{{ 'TOPBAR.APPEARANCE' | translate }}</div>
+      <button mat-menu-item (click)="theme.toggle()">
+        <mat-icon>{{ themeIcon() }}</mat-icon>
+        <span>
+          {{ theme.theme() === 'dark' ? ('THEME.LIGHT' | translate) : ('THEME.DARK' | translate) }}
+        </span>
+        <span class="kbd">Ctrl/⌘ + J</span>
+      </button>
+    </div>
+  </mat-menu>
+</mat-toolbar>
