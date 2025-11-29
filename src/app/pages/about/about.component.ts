@@ -6,7 +6,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { TranslateModule } from '@ngx-translate/core';
-import {RouterLink} from '@angular/router';
 import {UrlConstants} from '../../constants/UrlConstants';
 import {AssetsConstants} from '../../constants/AssetsConstants';
 
@@ -17,7 +16,7 @@ import {AssetsConstants} from '../../constants/AssetsConstants';
   imports: [
     CommonModule, NgOptimizedImage,
     MatCardModule, MatChipsModule, MatIconModule, MatButtonModule, MatDividerModule,
-    TranslateModule, RouterLink
+    TranslateModule
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
@@ -27,8 +26,12 @@ export class AboutComponent {
 
   xpKeys = [
     {
-      key: 'ABOUT.XP.COMPANY7',
+      key: 'ABOUT.XP.COMPANY8',
       logo: AssetsConstants.TERAPORT_LOGO
+    },
+    {
+      key: 'ABOUT.XP.COMPANY7',
+      logo: AssetsConstants.COLORDIGITAL_LOGO
     },
     {
       key: 'ABOUT.XP.COMPANY6',
@@ -36,7 +39,7 @@ export class AboutComponent {
     },
     {
       key: 'ABOUT.XP.COMPANY5',
-      logo: AssetsConstants.COLORDIGITAL_LOGO
+      logo: AssetsConstants.ASSYST_LOG
     },
     {
       key: 'ABOUT.XP.COMPANY4',
@@ -48,7 +51,7 @@ export class AboutComponent {
     },
     {
       key: 'ABOUT.XP.COMPANY2',
-      logo: AssetsConstants.ASSYST_LOG
+      logo: AssetsConstants.TH_BINGEN_LOGO
     },
     {
       key: 'ABOUT.XP.COMPANY1',
@@ -56,9 +59,51 @@ export class AboutComponent {
     },
     {
       key: 'ABOUT.XP.COMPANY0',
-      logo: AssetsConstants.TH_BINGEN_LOGO
+      logo: AssetsConstants.CHAMAELEON_LOGO
     }
   ];
+
+  projectKeys = [
+    {
+      key: 'ABOUT.PROJECT.P2',
+      externalLink: 'https://andreas-dahm.eu/',
+      internalLink: 'projects'
+    },
+    {
+      key: 'ABOUT.PROJECT.P1',
+      externalLink: 'https://store.steampowered.com/app/1532640/El_Mucho/',
+      internalLink: 'projects'
+    },
+    {
+      key: 'ABOUT.PROJECT.P0',
+      externalLink: 'https://itch.io/c/6628860/lobos-collection',
+      internalLink: 'projects'
+    }
+  ];
+
+  educationKeys = [
+    {
+      key: 'ABOUT.EDUCATION.E6'
+    },
+    {
+      key: 'ABOUT.EDUCATION.E5'
+    },
+    {
+      key: 'ABOUT.EDUCATION.E4'
+    },
+    {
+      key: 'ABOUT.EDUCATION.E3'
+    },
+    {
+      key: 'ABOUT.EDUCATION.E2'
+    },
+    {
+      key: 'ABOUT.EDUCATION.E1'
+    },
+    {
+      key: 'ABOUT.EDUCATION.E0'
+    }
+  ]
 
   primarySkills = [
     'ABOUT.SKILLS.JAVA',
@@ -74,6 +119,7 @@ export class AboutComponent {
   toolset = [
     'ABOUT.TOOLS.GIT',
     'ABOUT.TOOLS.GITHUB',
+    'ABOUT.TOOLS.GITLAB',
     'ABOUT.TOOLS.JENKINS',
     'ABOUT.TOOLS.K8S',
     'ABOUT.TOOLS.POSTGRES',

@@ -27,7 +27,9 @@
       "SKILLS": "Skills & Stack",
       "PRIMARY": "Core",
       "TOOLSET": "Toolset",
-      "EXPERIENCE": "Experience"
+      "EXPERIENCE": "Experience",
+      "PROJECTS": "Projects",
+      "EDUCATION": "Education"
     },
     "SKILLS": {
       "JAVA": "Java 8/Java 21+",
@@ -41,14 +43,16 @@
     },
     "TOOLS": {
       "GIT": "Git",
-      "GITHUB": "GITHUB",
+      "GITHUB": "Github",
+      "GITLAB": "Gitlab",
+      "JENKINS": "Jenkins",
       "K8S": "Kubernetes / k3d",
       "POSTGRES": "PostgreSQL",
       "MONGO": "MongoDB",
       "GRAFANA": "Grafana/Prometheus"
     },
     "XP": {
-      "COMPANY7": {
+      "COMPANY8": {
         "COMPANY": "Teraport GmbH",
         "ROLE": "Senior Software Developer / Architect",
         "TIME": "Feb. 2024 – now",
@@ -58,17 +62,17 @@
           "P3": "Development of a cost analysis tool called MIDO."
         }
       },
-      "COMPANY6": {
+      "COMPANY7": {
         "COMPANY": "ColorDigital GmbH",
         "ROLE": "Lead Software Developer",
         "TIME": "Mar. 2023 – Dec. 2023",
         "HIGHLIGHTS": {
           "P1": "Planning a new cloud architecture to migrate a large legacy monolith to a modern microservice-based platform.",
           "P2": "Led the development team of three to four backend engineers.",
-          "P3": "Collaborated with partners and customers on integrating their systems with the DMIx"
+          "P3": "Collaborated with partners and customers on integrating their systems with the DMIx."
         }
       },
-      "COMPANY5": {
+      "COMPANY6": {
         "COMPANY": "ColorDigital GmbH",
         "ROLE": "Senior Software Developer",
         "TIME": "Mar. 2021 – Mar. 2023",
@@ -78,7 +82,7 @@
           "P3": "Development of 'PAX', a tool for data exchange between the DMIx cloud and customer PLM/ERP systems, including CI/CD integration."
         }
       },
-      "COMPANY4": {
+      "COMPANY5": {
         "COMPANY": "Assyst GmbH",
         "ROLE": "Team leadership",
         "TIME": "Sep. 2015 – Feb. 2021",
@@ -88,7 +92,7 @@
           "P3": "Managed strategic initiatives in 3D software development."
         }
       },
-      "COMPANY3": {
+      "COMPANY4": {
         "COMPANY": "Assyst GmbH",
         "ROLE": "Software engineer",
         "TIME": "Apr. 2010 – Feb. 2021",
@@ -98,7 +102,7 @@
           "P3": "Participated in national and international research projects (EU7 and ZIM)."
         }
       },
-      "COMPANY2": {
+      "COMPANY3": {
         "COMPANY": "Assyst GmbH",
         "ROLE": "Internship and Diploma",
         "TIME": "Apr. 2009 – Apr. 2010",
@@ -108,8 +112,8 @@
           "P3": "Successfully implemented the diploma topic in Vidya."
         }
       },
-      "COMPANY1": {
-        "COMPANY": "TH bingen (University of Applied Sciences)",
+      "COMPANY2": {
+        "COMPANY": "TH Bingen (University of Applied Sciences)",
         "ROLE": "Tutorial for fundamentals of Java programming",
         "TIME": "Apr. 2008 – Aug. 2008",
         "HIGHLIGHTS": {
@@ -118,8 +122,8 @@
           "P3": "Provided assistance during practical programming exercises."
         }
       },
-      "COMPANY0": {
-        "COMPANY": "TH bingen (University of Applied Sciences)",
+      "COMPANY1": {
+        "COMPANY": "TH Bingen (University of Applied Sciences)",
         "ROLE": "Research Asssitent",
         "TIME": "Oct. 2007 – Apr. 2008",
         "HIGHLIGHTS": {
@@ -127,6 +131,78 @@
           "P2": "Implementation of a Java-based interface for Microsoft Excel.",
           "P3": "Integration of the MIT Exhibit framework and preparation for CeBIT 2008."
         }
+      }
+    },
+    "PROJECT": {
+      "P2": {
+        "TITLE": "Playground",
+        "DESCRIPTION": "This project is, as the name suggests, a personal playground that will grow over time. It showcases various private projects I’m working on and documents their progress, key ideas, and milestones.",
+        "LINK_EXTERNAL": "andreas-dahm.eu",
+        "LINK_INTERNAL": "Project details",
+        "HIGHLIGHTS": {
+          "P1": "Using modern technologies and CI/CD pipelines (Angular 20+, Spring Boot 4, GitHub).",
+          "P2": "Showcasing personal projects and improving algorithmic skills over time.",
+          "P3": "Deepening knowledge in JavaScript/TypeScript, Angular, Spring Boot and related technologies through hands-on practice."
+        }
+      },
+      "P1": {
+        "TITLE": "El Mucho",
+        "DESCRIPTION": "This is my first published game on Steam. I developed it together with my brother, fulfilling one of my personal goals: creating and releasing my own video game.",
+        "LINK_EXTERNAL": "Steam Store",
+        "LINK_INTERNAL": "Project details",
+        "HIGHLIGHTS": {
+          "P1": "Publishing a game on Steam and integrating the Steam API.",
+          "P2": "Designing, planning and developing a complete game from scratch.",
+          "P3": "Implementing complex algorithms, including a custom A* pathfinding system and game AI logic."
+        }
+      },
+      "P0": {
+        "TITLE": "Game Jams",
+        "DESCRIPTION": "This section showcases several of my past game jam creations. Game jams are a great way to explore new game ideas and quickly validate whether a game loop works. The tight time constraints force you to focus, and it’s always exciting to see what can be achieved within such a short timeframe.",
+        "LINK_EXTERNAL": "Itch.io Collection",
+        "LINK_INTERNAL": "Project details",
+        "HIGHLIGHTS": {
+          "P1": "Planning a realistic project scope with a team that can be built within 48 hours.",
+          "P2": "Learning to stay focused and work effectively under strict time constraints.",
+          "P3": "Experiencing the joy of creating a playable game in a short timeframe and seeing others enjoy it."
+        }
+      }
+    },
+    "EDUCATION": {
+      "E6": {
+        "WHERE": "FH Bingen (University of Applied Sciences)",
+        "WHEN": "2006 – 2010",
+        "WHAT": "Diploma (FH), Applied Computer Science (final grade 1.4)"
+      },
+      "E5": {
+        "WHERE": "FH Koblenz (University of Applied Sciences)",
+        "WHEN": "2005 – 2006",
+        "WHAT": "1 semester of Engineering Informatics"
+      },
+      "E4": {
+        "WHERE": "BBS Montabaur",
+        "WHEN": "2002 – 2005",
+        "WHAT": "Apprenticeship as IT Specialist for Application Development"
+      },
+      "E3": {
+        "WHERE": "BBS Andernach – Higher Vocational School (Computer Science)",
+        "WHEN": "2000 – 2002",
+        "WHAT": "University entrance qualification (Fachhochschulreife)"
+      },
+      "E2": {
+        "WHERE": "BBS Andernach – Vocational School for Technology (Electrical Engineering)",
+        "WHEN": "1998 – 2000",
+        "WHAT": "Secondary school certificate (Realschulabschluss)"
+      },
+      "E1": {
+        "WHERE": "Hauptschule Hinter Burg Mayen (Albert Schweitzer Realschule Plus)",
+        "WHEN": "1995 – 1998",
+        "WHAT": "Lower secondary school certificate (Hauptschulabschluss)"
+      },
+      "E0": {
+        "WHERE": "Albert Schweitzer Realschule Mayen",
+        "WHEN": "1993 – 1995",
+        "WHAT": "No degree (transferred to lower secondary school)"
       }
     }
   }

@@ -27,12 +27,16 @@ $dark-theme: mat.define-theme((
   --app-fg: #{mat.get-theme-color($light-theme, on-surface)};
   --app-card-background: #fafafa;
   --app-logo-bg: #313131;
+  --link-color: #38a7ff;
+  --link-color-hover: #66bfff;
 }
 .dark {
   --app-bg: #{mat.get-theme-color($dark-theme, surface-container-low)};
   --app-fg: #{mat.get-theme-color($dark-theme, on-surface)};
   --app-card-background: #313131;
   --app-logo-bg: #313131;
+  --link-color: #6dbcff;
+  --link-color-hover: #9ad2ff;
 }
 
 /* ---- global background and tests ---- */
@@ -68,4 +72,16 @@ body {
     border-color 220ms ease,
     box-shadow 220ms ease,
     fill 220ms ease;
+}
+
+/* links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+  }
 }
