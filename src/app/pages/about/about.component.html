@@ -78,6 +78,84 @@
   <mat-card class="experience">
     <h2>{{ 'ABOUT.SECTION.EXPERIENCE' | translate }}</h2>
 
+
+    <div class="xp-list">
+      @for (entry of xpKeys; track entry) {
+        <div class="xp-item">
+          <div class="xp-head-grid">
+            <div class="logo-wrap">
+              <img
+                src="{{entry.logo}}"
+                alt=""
+                class="company-logo"
+                aria-hidden="true"
+              />
+            </div>
+            <div class="head-row">
+              <strong>{{ (entry.key + '.ROLE') | translate }}</strong>
+              <span class="time">{{ (entry.key + '.TIME') | translate }}</span>
+              <div class="company-row">
+                {{ (entry.key + '.COMPANY') | translate }}
+              </div>
+            </div>
+
+            <div class="company-row">
+              {{ (entry.key + '.COMPANY') | translate }}
+            </div>
+
+          </div>
+          <div class="highlights">
+            <ul>
+              <li>{{ entry.key + '.HIGHLIGHTS.P1' | translate }}</li>
+              <li>{{ entry.key + '.HIGHLIGHTS.P2' | translate }}</li>
+              <li>{{ entry.key + '.HIGHLIGHTS.P3' | translate }}</li>
+            </ul>
+          </div>
+        </div>
+
+        @if(entry.key !== xpKeys.at(xpKeys.length-1)?.key)
+        {
+          <mat-divider></mat-divider>
+        }
+      }
+    </div>
+  </mat-card>
+  <mat-card class="projects">
+    <h2>{{ 'ABOUT.SECTION.PROJECTS' | translate }}</h2>
+
+    <div class="xp-list">
+      <div class="xp-item">
+        <div class="xp-head">
+          <strong>{{ 'ABOUT.XP.T1.ROLE' | translate }}</strong>
+          <span class="time">{{ 'ABOUT.XP.T1.TIME' | translate }}</span>
+        </div>
+        <div class="xp-sub">{{ 'ABOUT.XP.T1.COMPANY' | translate }}</div>
+        <ul>
+          <li>{{ 'ABOUT.XP.T1.P1' | translate }}</li>
+          <li>{{ 'ABOUT.XP.T1.P2' | translate }}</li>
+          <li>{{ 'ABOUT.XP.T1.P3' | translate }}</li>
+        </ul>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <div class="xp-item">
+        <div class="xp-head">
+          <strong>{{ 'ABOUT.XP.T2.ROLE' | translate }}</strong>
+          <span class="time">{{ 'ABOUT.XP.T2.TIME' | translate }}</span>
+        </div>
+        <div class="xp-sub">{{ 'ABOUT.XP.T2.COMPANY' | translate }}</div>
+        <ul>
+          <li>{{ 'ABOUT.XP.T2.P1' | translate }}</li>
+          <li>{{ 'ABOUT.XP.T2.P2' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card class="education">
+    <h2>{{ 'ABOUT.SECTION.EDUCATION' | translate }}</h2>
+
     <div class="xp-list">
       <div class="xp-item">
         <div class="xp-head">

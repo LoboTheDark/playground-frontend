@@ -49,13 +49,84 @@
       "GRAFANA": "Grafana/Prometheus"
     },
     "XP": {
-      "T1": {
+      "COMPANY7": {
         "COMPANY": "Teraport GmbH",
         "ROLE": "Senior Software Developer / Architect",
         "TIME": "Feb. 2024 – heute",
         "HIGHLIGHTS": {
-          "P1": "Architecture and implementation of database connectivity using Hibernate 6.x.",
-          "P2": "Design and development of a full-stack web application for collision analysis (Angular + Spring Boot + Docker)."
+          "P1": "Architektur und Implementierung der Datenbankanbindung mit Hibernate 6.x.",
+          "P2": "Konzeption und Entwicklung einer Full-Stack-Webanwendung für Kollisionsanalysen (Angular + Spring Boot + Docker).",
+          "P3": "Entwicklung eines Kostenanalysetools mit dem Namen MIDO."
+        }
+      },
+      "COMPANY6": {
+        "COMPANY": "ColorDigital GmbH",
+        "ROLE": "Lead Software Developer",
+        "TIME": "März 2023 – Dez. 2023",
+        "HIGHLIGHTS": {
+          "P1": "Planung einer neuen Cloud-Architektur zur Migration eines umfangreichen Legacy-Monolithen in eine moderne Microservice-Plattform.",
+          "P2": "Leitung eines Teams von drei bis vier Backend-Entwickler:innen.",
+          "P3": "Zusammenarbeit mit Partnern und Kund:innen bei der Integration ihrer Systeme in die DMIx-Cloud."
+        }
+      },
+      "COMPANY5": {
+        "COMPANY": "ColorDigital GmbH",
+        "ROLE": "Senior Software Developer",
+        "TIME": "März 2021 – März 2023",
+        "HIGHLIGHTS": {
+          "P1": "Arbeit an der DMIx-Core-Cloud, darunter die Implementierung einer Elasticsearch-basierten Echtzeit-Suchfunktion.",
+          "P2": "Implementierung des neuen Browser-Tools „Moodboard“ (Node.js + Vue.js).",
+          "P3": "Entwicklung von „PAX“, einem Tool für den Datenaustausch zwischen der DMIx-Cloud und PLM/ERP-Systemen, inkl. CI/CD-Integration."
+        }
+      },
+      "COMPANY4": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Teamleitung",
+        "TIME": "Sep. 2015 – Feb. 2021",
+        "HIGHLIGHTS": {
+          "P1": "Teamleitung der Vidya-Softwareabteilung, inkl. Personalverantwortung und Bewerbungsprozesse.",
+          "P2": "Leitung mehrerer Projekte mit externen Partnern und Freelancer:innen.",
+          "P3": "Steuerung strategischer Initiativen im Bereich 3D-Softwareentwicklung."
+        }
+      },
+      "COMPANY3": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Software Engineer",
+        "TIME": "Apr. 2010 – Feb. 2021",
+        "HIGHLIGHTS": {
+          "P1": "Arbeit an Kerntechnologien wie Algorithmen, Simulation, Rendering und Kollisions­erkennung.",
+          "P2": "Einsatz verschiedener Technologien, u. a. Java, OpenCL, OpenGL, GLSL-Shader, C++ und REST-Schnittstellen.",
+          "P3": "Mitarbeit an nationalen und internationalen Forschungsprojekten (EU7 und ZIM)."
+        }
+      },
+      "COMPANY2": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Praktikum und Diplomarbeit",
+        "TIME": "Apr. 2009 – Apr. 2010",
+        "HIGHLIGHTS": {
+          "P1": "Implementierung produktiver Funktionen in der Echtzeit-Kleidersimulationssoftware Vidya.",
+          "P2": "Durchführung von Recherchen und Literaturstudien für die Diplomarbeit.",
+          "P3": "Erfolgreiche Umsetzung des Diplomthemas in Vidya."
+        }
+      },
+      "COMPANY1": {
+        "COMPANY": "TH Bingen (University of Applied Sciences)",
+        "ROLE": "Tutor für Grundlagen der Java-Programmierung",
+        "TIME": "Apr. 2008 – Aug. 2008",
+        "HIGHLIGHTS": {
+          "P1": "Erstellung praktischer und theoretischer Lehrmaterialien.",
+          "P2": "Durchführung einer 20-stündigen Vorlesungsreihe für den Bioinformatik-Studiengang.",
+          "P3": "Unterstützung bei praktischen Programmierübungen."
+        }
+      },
+      "COMPANY0": {
+        "COMPANY": "TH Bingen (University of Applied Sciences)",
+        "ROLE": "Wissenschaftliche Hilfskraft",
+        "TIME": "Okt. 2007 – Apr. 2008",
+        "HIGHLIGHTS": {
+          "P1": "Evaluation verschiedener Web-2.0-Technologien.",
+          "P2": "Implementierung einer Java-basierten Schnittstelle zu Microsoft Excel.",
+          "P3": "Integration des MIT-Exhibit-Frameworks und Vorbereitung für die CeBIT 2008."
         }
       }
     }

@@ -37,7 +37,7 @@
     }
 
     .actions {
-      display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;  margin-bottom: .25rem;
+      display:flex; gap:.5rem; flex-wrap:wrap; margin-top:.5rem;  margin-bottom: 1rem;
       .mat-icon { margin-right:.25rem; }
     }
   }
@@ -46,6 +46,7 @@
 /* Skills block */
 .skills {
   border-radius: 16px;
+  padding: 5px;
   background: var(--app-card-background);
   h2 { margin-top: .25rem; margin-left: .25rem; }
   .chip-groups {
@@ -62,6 +63,47 @@
 /* Experience block */
 .experience {
   border-radius: 16px;
+  padding: 5px;
+  background: var(--app-card-background);
+  h2 { margin-top: .25rem;margin-left: .25rem; }
+  .xp-list {
+    margin-left: .25rem;
+    display: grid; gap: .75rem;
+  }
+  .xp-item {
+    .xp-head {
+      display:flex; align-items:baseline; gap:.5rem;
+      .time { opacity:.75; font-size:.9rem; }
+    }
+    .xp-sub { opacity:.9; margin-bottom:.25rem; }
+    ul { margin: .25rem 0 .5rem 1.15rem; }
+  }
+}
+
+/* Experience block */
+.projects {
+  border-radius: 16px;
+  padding: 5px;
+  background: var(--app-card-background);
+  h2 { margin-top: .25rem;margin-left: .25rem; }
+  .xp-list {
+    margin-left: .25rem;
+    display: grid; gap: .75rem;
+  }
+  .xp-item {
+    .xp-head {
+      display:flex; align-items:baseline; gap:.5rem;
+      .time { opacity:.75; font-size:.9rem; }
+    }
+    .xp-sub { opacity:.9; margin-bottom:.25rem; }
+    ul { margin: .25rem 0 .5rem 1.15rem; }
+  }
+}
+
+/* Experience block */
+.education {
+  border-radius: 16px;
+  padding: 5px;
   background: var(--app-card-background);
   h2 { margin-top: .25rem;margin-left: .25rem; }
   .xp-list {
@@ -83,4 +125,60 @@
   .hero { grid-template-columns: 1fr; }
   .hero .photo { justify-content: flex-start; }
   .skills .chip-groups { grid-template-columns: 1fr; }
+}
+
+.xp-head-grid {
+  display: grid;
+  grid-template-columns: calc(48px + .75rem) 1fr; /* 1: Logo, 2: Text */
+  grid-template-rows: auto auto;   /* 1: Role/Time, 2: Company */
+  column-gap: .75rem;
+}
+
+.logo-wrap {
+  grid-row: 1 / span 2;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  opacity: .9;
+  background-color: var(--app-logo-bg);
+}
+
+
+.head-row {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .5rem 1rem;
+
+  strong {
+    font-size: 1rem;
+  }
+  .time  {
+    opacity: .75; font-size: .9rem;
+  }
+}
+
+.company-row {
+  grid-row: 2;
+  grid-column: 2;
+  margin-top: .1rem;
+  opacity: .85;
+}
+
+.highlights {
+  margin-top: .4rem;
+  margin-left: .75rem;
+  padding-left: 1.2rem;
+
+  li {
+    margin: .2rem 0;
+  }
 }

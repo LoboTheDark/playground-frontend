@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component} from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
@@ -23,7 +23,42 @@ import {AssetsConstants} from '../../constants/AssetsConstants';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
-  cvHref = 'assets/cv/andreas-dahm-cv.pdf';
+  cvHref = AssetsConstants.CV;
+
+  xpKeys = [
+    {
+      key: 'ABOUT.XP.COMPANY7',
+      logo: AssetsConstants.TERAPORT_LOGO
+    },
+    {
+      key: 'ABOUT.XP.COMPANY6',
+      logo: AssetsConstants.COLORDIGITAL_LOGO
+    },
+    {
+      key: 'ABOUT.XP.COMPANY5',
+      logo: AssetsConstants.COLORDIGITAL_LOGO
+    },
+    {
+      key: 'ABOUT.XP.COMPANY4',
+      logo: AssetsConstants.ASSYST_LOG
+    },
+    {
+      key: 'ABOUT.XP.COMPANY3',
+      logo: AssetsConstants.ASSYST_LOG
+    },
+    {
+      key: 'ABOUT.XP.COMPANY2',
+      logo: AssetsConstants.ASSYST_LOG
+    },
+    {
+      key: 'ABOUT.XP.COMPANY1',
+      logo: AssetsConstants.TH_BINGEN_LOGO
+    },
+    {
+      key: 'ABOUT.XP.COMPANY0',
+      logo: AssetsConstants.TH_BINGEN_LOGO
+    }
+  ];
 
   primarySkills = [
     'ABOUT.SKILLS.JAVA',
@@ -45,8 +80,6 @@ export class AboutComponent {
     'ABOUT.TOOLS.MONGO',
     'ABOUT.TOOLS.GRAFANA',
   ];
-
-
 
   openMail(event: Event) {
     event.preventDefault();

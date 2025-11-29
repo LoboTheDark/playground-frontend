@@ -26,11 +26,13 @@ $dark-theme: mat.define-theme((
   --app-bg: #{mat.get-theme-color($light-theme, surface-container-low)};
   --app-fg: #{mat.get-theme-color($light-theme, on-surface)};
   --app-card-background: #fafafa;
+  --app-logo-bg: #313131;
 }
 .dark {
   --app-bg: #{mat.get-theme-color($dark-theme, surface-container-low)};
   --app-fg: #{mat.get-theme-color($dark-theme, on-surface)};
   --app-card-background: #313131;
+  --app-logo-bg: #313131;
 }
 
 /* ---- global background and tests ---- */

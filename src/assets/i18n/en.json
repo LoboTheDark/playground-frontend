@@ -48,13 +48,84 @@
       "GRAFANA": "Grafana/Prometheus"
     },
     "XP": {
-      "T1": {
+      "COMPANY7": {
         "COMPANY": "Teraport GmbH",
         "ROLE": "Senior Software Developer / Architect",
-        "TIME": "Feb. 2024 – heute",
+        "TIME": "Feb. 2024 – now",
         "HIGHLIGHTS": {
           "P1": "Architecture and implementation of database connectivity using Hibernate 6.x.",
-          "P2": "Design and development of a full-stack web application for collision analysis (Angular + Spring Boot + Docker)."
+          "P2": "Design and development of a full-stack web application for collision analysis (Angular + Spring Boot + Docker).",
+          "P3": "Development of a cost analysis tool called MIDO."
+        }
+      },
+      "COMPANY6": {
+        "COMPANY": "ColorDigital GmbH",
+        "ROLE": "Lead Software Developer",
+        "TIME": "Mar. 2023 – Dec. 2023",
+        "HIGHLIGHTS": {
+          "P1": "Planning a new cloud architecture to migrate a large legacy monolith to a modern microservice-based platform.",
+          "P2": "Led the development team of three to four backend engineers.",
+          "P3": "Collaborated with partners and customers on integrating their systems with the DMIx"
+        }
+      },
+      "COMPANY5": {
+        "COMPANY": "ColorDigital GmbH",
+        "ROLE": "Senior Software Developer",
+        "TIME": "Mar. 2021 – Mar. 2023",
+        "HIGHLIGHTS": {
+          "P1": "Worked on the DMIx core cloud, including the implementation of an Elasticsearch-based real-time search module.",
+          "P2": "Implementation of a new browser tool called 'Moodboard' (Node.js + Vue.js).",
+          "P3": "Development of 'PAX', a tool for data exchange between the DMIx cloud and customer PLM/ERP systems, including CI/CD integration."
+        }
+      },
+      "COMPANY4": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Team leadership",
+        "TIME": "Sep. 2015 – Feb. 2021",
+        "HIGHLIGHTS": {
+          "P1": "Team lead of the Vidya software department, including disciplinary responsibility and interviews.",
+          "P2": "Led several projects with external partners and freelancers.",
+          "P3": "Managed strategic initiatives in 3D software development."
+        }
+      },
+      "COMPANY3": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Software engineer",
+        "TIME": "Apr. 2010 – Feb. 2021",
+        "HIGHLIGHTS": {
+          "P1": "Worked on core technologies such as algorithms, simulation, rendering, and collision detection.",
+          "P2": "Used technologies including Java, OpenCL, OpenGL, GLSL shaders, C++, and REST interfaces.",
+          "P3": "Participated in national and international research projects (EU7 and ZIM)."
+        }
+      },
+      "COMPANY2": {
+        "COMPANY": "Assyst GmbH",
+        "ROLE": "Internship and Diploma",
+        "TIME": "Apr. 2009 – Apr. 2010",
+        "HIGHLIGHTS": {
+          "P1": "Implemented production features in the real-time cloth simulation software Vidya.",
+          "P2": "Conducted research and literature review for the diploma thesis.",
+          "P3": "Successfully implemented the diploma topic in Vidya."
+        }
+      },
+      "COMPANY1": {
+        "COMPANY": "TH bingen (University of Applied Sciences)",
+        "ROLE": "Tutorial for fundamentals of Java programming",
+        "TIME": "Apr. 2008 – Aug. 2008",
+        "HIGHLIGHTS": {
+          "P1": "Preparation of practical and theoretical course material.",
+          "P2": "Held a 20-hour lecture series for the bioinformatics programme.",
+          "P3": "Provided assistance during practical programming exercises."
+        }
+      },
+      "COMPANY0": {
+        "COMPANY": "TH bingen (University of Applied Sciences)",
+        "ROLE": "Research Asssitent",
+        "TIME": "Oct. 2007 – Apr. 2008",
+        "HIGHLIGHTS": {
+          "P1": "Evaluation of various Web 2.0 technologies.",
+          "P2": "Implementation of a Java-based interface for Microsoft Excel.",
+          "P3": "Integration of the MIT Exhibit framework and preparation for CeBIT 2008."
         }
       }
     }
