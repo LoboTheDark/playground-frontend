@@ -1,0 +1,19 @@
+.terminal-loader {
+  font-family: monospace;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.cursor {
+  width: 10px;
+  height: 1.1rem;
+  background: var(--app-fg);
+  margin-left: .25rem;
+  animation: blink .8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}

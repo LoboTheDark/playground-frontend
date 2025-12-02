@@ -1,9 +1,60 @@
-﻿* text=auto eol=lf
+﻿# ---- Standard: All textfiles normalize to LF also during checkout ----
+* text=auto eol=lf
 
-*.png binary
-*.jpg binary
-*.svg text
-*.ts text
-*.html text
-*.scss text
-*.json text
+# ---- Sourcecode / Build ----
+*.java   text eol=lf
+*.kt     text eol=lf
+*.kts    text eol=lf
+*.groovy text eol=lf
+*.gradle text eol=lf
+gradlew  text eol=lf
+# Windows wrapper keeps CRLF
+gradlew.bat text eol=crlf
+
+# ---- Scripts ----
+*.sh   text eol=lf
+*.bash text eol=lf
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+
+# ---- Configuration / Resources ----
+*.properties text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.xml       text eol=lf
+*.json      text eol=lf
+*.sql       text eol=lf
+*.conf      text eol=lf
+Dockerfile  text eol=lf
+*.dockerfile text eol=lf
+
+# ---- Document ----
+*.md   text eol=lf
+*.adoc text eol=lf
+*.txt  text eol=lf
+*.csv  text eol=lf
+*.svg  text eol=lf   # svg ist Text
+
+# ---- binary files never convert ----
+*.jar  binary
+*.war  binary
+*.ear  binary
+*.class binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary
+*.tar  binary
+*.gz   binary
+*.7z   binary
+*.ttf  binary
+*.woff binary
+*.woff2 binary
+*.so   binary
+*.dll  binary
+*.dylib binary
+*.exe  binary
