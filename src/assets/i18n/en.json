@@ -16,8 +16,8 @@
   "LANG": { "LABEL": "Language", "EN": "English", "DE": "Deutsch" },
   "ABOUT": {
     "ALT": { "PROFILE": "Profile photo of Andreas Dahm" },
-    "HELLO": "Hello, I’m Andreas Dahm.",
-    "LEAD": "During my training as an application developer, I became fascinated by how complex problems can be solved elegantly through code. After studying Applied Computer Science at FH Bingen, I was able to deepen this passion in a wide variety of projects – from 3D simulations to modern web applications. Today, I work as a Senior Software Developer and Architect with a focus on Java, Angular, and DevOps. Thanks for stopping by!",
+    "HELLO": "Hello, I’m Andreas.",
+    "LEAD": "I first discovered my interest in software development during my training as an application developer. After completing my degree in Applied Computer Science at FH Bingen, I have been working continuously as a software developer since 2010. During this time, I have gained experience in various areas, including 3D simulation and modern web applications. I also enjoy working on personal software projects, particularly in game development and algorithmic topics. Thank you for stopping by!",
     "ROLE": "Senior Software Developer / Full-Stack Developer / Software Architect",
     "LOCATION": "Munich · Remote",
     "DOWNLOAD_CV": "Download CV",

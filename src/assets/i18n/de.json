@@ -16,8 +16,8 @@
   "LANG": { "LABEL": "Sprache", "EN": "Englisch", "DE": "Deutsch" },
   "ABOUT": {
     "ALT": { "PROFILE": "Profilfoto von Andreas Dahm" },
-    "HELLO": "Hallo, ich bin Andreas Dahm.",
-    "LEAD": "Bereits in meiner Ausbildung zum Fachinformatiker hat mich fasziniert, wie man durch Code komplexe Probleme elegant lösen kann. Nach meinem Studium der Angewandten Informatik an der FH Bingen konnte ich diese Begeisterung in verschiedensten Projekten vertiefen – von 3D-Simulationen bis zu modernen Web-Applikationen. Heute arbeite ich als Senior Software Developer und Architekt mit Fokus auf Java, Angular und DevOps. Danke, dass du vorbeischaust!",
+    "HELLO": "Hallo, ich bin Andreas.",
+    "LEAD": "Bereits in meiner Ausbildung zum Fachinformatiker habe ich gemerkt, wie sehr mich Softwareentwicklung interessiert. Nach meinem Studium der Angewandten Informatik an der FH Bingen arbeite ich seit 2010 durchgehend als Softwareentwickler. In dieser Zeit konnte ich in verschiedenen Bereichen Erfahrungen sammeln, darunter 3D-Simulation und moderne Web-Anwendungen. Auch privat beschäftige ich mich gern mit Softwareentwicklung, besonders mit Spieleentwicklung und algorithmischen Themen. Schön, dass du hier bist!",
     "ROLE": "Senior Software Entwickler / Full-Stack Entwickler / Softwarearchitekt",
     "LOCATION": "München · Remote",
     "DOWNLOAD_CV": "Lebenslauf herunterladen",
