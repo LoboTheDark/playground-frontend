@@ -16,6 +16,33 @@
     <a routerLink="/projects" mat-button>{{ 'TOPBAR.CONTACT' | translate }}</a>
   </nav>
 
+  <!-- Mobile nav menu button -->
+  <button
+    mat-icon-button
+    class="nav-menu-btn"
+    [matMenuTriggerFor]="navMenu"
+    aria-label="Open navigation">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <span class="spacer"></span>
+
+  <!-- Mobile nav menu -->
+  <mat-menu #navMenu="matMenu" xPosition="before">
+    <button mat-menu-item routerLink="/about">
+      {{ 'TOPBAR.ABOUT' | translate }}
+    </button>
+    <button mat-menu-item routerLink="/projects">
+      {{ 'TOPBAR.PROJECTS' | translate }}
+    </button>
+    <button mat-menu-item routerLink="/hobbys">
+      {{ 'TOPBAR.HOBBY' | translate }}
+    </button>
+    <button mat-menu-item routerLink="/contact">
+      {{ 'TOPBAR.CONTACT' | translate }}
+    </button>
+  </mat-menu>
+
   <span class="spacer"></span>
 
   <!-- Settings: Sprache + Theme -->

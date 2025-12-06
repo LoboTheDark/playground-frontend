@@ -68,6 +68,16 @@
 }
 
 /* Responsive: Collapse navigation to icon if width is smaller than 760px */
+.nav-menu-btn {
+  display: none;
+}
+
 @media (max-width: 760px) {
-  .topbar .nav { display:none; }
+  .topbar .nav {
+    display: none;
+  }
+
+  .nav-menu-btn {
+    display: inline-flex;
+  }
 }
