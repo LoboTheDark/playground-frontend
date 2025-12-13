@@ -215,5 +215,19 @@
         "WHAT": "Kein Abschluss. Wechsel zur Hauptschule"
       }
     }
+  },
+  "PROJECTS": {
+    "PLAYGROUND": {
+      "TITLE": "Playground Website",
+      "SHORT_DESCRIPTION": "Hier geht es um diese Webseite."
+    },
+    "EL_MUCHO": {
+      "TITLE": "El Mucho",
+      "SHORT_DESCRIPTION": "Hier geht es um mein ersten Spiel auf Steam."
+    },
+    "GAME_JAMS": {
+      "TITLE": "Game Jams",
+      "SHORT_DESCRIPTION": "Hier geht es meine Teilnahme an mehreren Game Jams."
+    }
   }
 }

@@ -205,5 +205,19 @@
         "WHAT": "No degree (transferred to lower secondary school)"
       }
     }
+  },
+  "PROJECTS": {
+    "PLAYGROUND": {
+      "TITLE": "Playground Website",
+      "SHORT_DESCRIPTION": "This is about this website."
+    },
+    "EL_MUCHO": {
+      "TITLE": "El Mucho",
+      "SHORT_DESCRIPTION": "This is about my first game on steam."
+    },
+    "GAME_JAMS": {
+      "TITLE": "Game Jams",
+      "SHORT_DESCRIPTION": "This is about my participation at several game jams."
+    }
   }
 }
