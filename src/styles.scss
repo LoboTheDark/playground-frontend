@@ -25,8 +25,20 @@ $dark-theme: mat.define-theme((
 :root {
   --app-bg: #{mat.get-theme-color($light-theme, surface-container-low)};
   --app-fg: #{mat.get-theme-color($light-theme, on-surface)};
-  --app-card-background: #fafafa;
   --app-logo-bg: #313131;
+  --app-card-background: #fafafa;
+
+  --card-radius: 18px;
+  --card-bg: var(--app-card-background);
+  --card-border-inset: rgba(255, 255, 255, 0.35);
+  --card-border-inset-dark: rgba(0, 0, 0, 0.35);
+  --card-shadow-outer:
+    0 24px 60px rgba(0, 0, 0, 0.55),
+    0 8px 18px rgba(0, 0, 0, 0.35);
+  --card-shadow-hover:
+    0 32px 80px rgba(0, 0, 0, 0.65),
+    0 12px 28px rgba(0, 0, 0, 0.45);
+
   --link-color: #38a7ff;
   --link-color-hover: #66bfff;
 }
@@ -35,6 +47,9 @@ $dark-theme: mat.define-theme((
   --app-fg: #{mat.get-theme-color($dark-theme, on-surface)};
   --app-card-background: #313131;
   --app-logo-bg: #313131;
+
+  --card-bg: var(--app-card-background);
+
   --link-color: #6dbcff;
   --link-color-hover: #9ad2ff;
 }
@@ -84,4 +99,47 @@ a {
     color: var(--link-color-hover);
     text-decoration: underline;
   }
+}
+
+/* cards */
+.mat-mdc-card {
+  position: relative;
+  border-radius: var(--card-radius) !important;
+  background: var(--card-bg) !important;
+  box-shadow: var(--card-shadow-outer);
+  overflow: hidden;
+
+  border: none;
+
+  transition:
+    box-shadow 200ms ease,
+    transform 200ms ease;
+}
+
+.mat-mdc-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  box-shadow:
+    inset 0 1px 0 var(--card-border-inset),
+    inset 0 -1px 0 var(--card-border-inset-dark);
+}
+
+.mat-mdc-card::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.mat-mdc-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--card-shadow-hover);
 }
