@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
@@ -14,10 +14,14 @@ import {AssetsConstants} from '../../constants/AssetsConstants';
   selector: 'app-about',
   standalone: true,
   imports: [
-    CommonModule, NgOptimizedImage,
-    MatCardModule, MatChipsModule, MatIconModule, MatButtonModule, MatDividerModule,
+    NgOptimizedImage,
+    MatCardModule,
+    MatChipsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatDividerModule,
     TranslateModule
-  ],
+],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
