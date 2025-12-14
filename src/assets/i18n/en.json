@@ -131,7 +131,16 @@
           "P2": "Implementation of a Java-based interface for Microsoft Excel.",
           "P3": "Integration of the MIT Exhibit framework and preparation for CeBIT 2008."
         }
-      }
+      },
+      "COMPANY0": {
+        "COMPANY": "Chamaeleon AG",
+        "ROLE": "Training as an IT specialist in application development",
+        "TIME": "Jul. 2002 – Jun. 2005",
+        "HIGHLIGHTS": {
+          "P1": "Development in PERL, PHP and ASP.",
+          "P2": "Porting, maintenance and reengineering of existing software.",
+          "P3": "Regular performance of system tests and quality controls, as well as their documentation."
+        }
     },
     "PROJECT": {
       "P2": {

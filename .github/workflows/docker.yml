@@ -1,7 +1,8 @@
 name: Build & Push Frontend A
 on:
   push:
-    branches: ['**']
+    branches:
+      - main
 
 jobs:
   docker:
