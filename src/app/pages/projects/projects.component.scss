@@ -1,29 +1,21 @@
-.wip {
-  display: flex;
-  flex-direction: column;
+.project-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
   align-items: center;
-  gap: .75rem;
-  padding: 2rem;
-  opacity: .9;
 }
 
-.dots {
-  display: flex;
-  gap: .5rem;
+.project-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
 }
 
-.dots span {
-  width: 10px;
-  height: 10px;
-  background: var(--app-fg);
-  border-radius: 50%;
-  animation: pulse 1.4s infinite ease-in-out;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+  gap: 12px;
 }
 
-.dots span:nth-child(2) { animation-delay: .2s; }
-.dots span:nth-child(3) { animation-delay: .4s; }
-
-@keyframes pulse {
-  0%, 80%, 100% { opacity: .3; transform: scale(1); }
-  40% { opacity: 1; transform: scale(1.4); }
+.gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
 }

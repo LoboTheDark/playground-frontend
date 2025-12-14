@@ -143,3 +143,53 @@ a {
   transform: translateY(-2px);
   box-shadow: var(--card-shadow-hover);
 }
+
+/* accordion */
+/* expansion panels like cards */
+.mat-accordion {
+  display: grid;
+  gap: 8px;
+}
+
+.mat-accordion .mat-expansion-panel {
+  border-radius: var(--card-radius) !important;
+  background: var(--card-bg) !important;
+  overflow: hidden; /* ok */
+  border: none !important;
+}
+
+.mat-accordion .mat-expansion-panel:hover {
+  box-shadow: var(--card-shadow-hover) !important;
+  transform: translateY(-2px);
+
+}
+
+.mat-accordion .mat-expansion-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  box-shadow:
+    inset 0 1px 0 var(--card-border-inset),
+    inset 0 -1px 0 var(--card-border-inset-dark);
+}
+
+.mat-accordion .mat-expansion-panel::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.mat-expansion-panel-header {
+  background: transparent !important;
+}
+
+.mat-expansion-panel-body {
+  padding-top: 0;
+}

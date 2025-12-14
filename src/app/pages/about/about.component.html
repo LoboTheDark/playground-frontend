@@ -47,7 +47,7 @@
       <div>
         <h3>{{ 'ABOUT.SECTION.PRIMARY' | translate }}</h3>
         <mat-chip-set aria-label="Primary skills">
-          @for (s of primarySkills; track primarySkills)          {
+          @for (s of primarySkills; track s) {
             <mat-chip >{{ s | translate }}</mat-chip>
           }
         </mat-chip-set>
@@ -56,7 +56,7 @@
       <div>
         <h3>{{ 'ABOUT.SECTION.TOOLSET' | translate }}</h3>
         <mat-chip-set aria-label="Toolset">
-          @for (t of toolset; track toolset)          {
+          @for (t of toolset; track t)          {
             <mat-chip>{{ t | translate }}</mat-chip>
           }
         </mat-chip-set>
@@ -67,7 +67,7 @@
   <mat-card class="experience">
     <h2>{{ 'ABOUT.SECTION.EXPERIENCE' | translate }}</h2>
     <div class="xp-list">
-      @for (entry of xpKeys; track entry) {
+      @for (entry of xpKeys; track entry.key) {
         <div class="xp-item">
           <div class="xp-head-grid">
             <div class="logo-wrap">
@@ -108,7 +108,7 @@
     <h2>{{ 'ABOUT.SECTION.PROJECTS' | translate }}</h2>
 
     <div class="xp-list">
-      @for (entry of projectKeys; track entry) {
+      @for (entry of projectKeys; track entry.key) {
       <div class="xp-item">
         <div class="head-row">
           <strong>{{ (entry.key + '.TITLE') | translate }}</strong>
@@ -116,18 +116,21 @@
         <div class="company-row">
           {{ (entry.key + '.DESCRIPTION') | translate }}
         </div>
+        @if (entry.externalLink) {
+          <div class="link-row">
+            <a class="link-with-icon"
+               href="{{entry.externalLink}}"
+               target="_blank"
+               rel="noopener noreferrer">
+              <mat-icon>open_in_new</mat-icon>
+              {{ (entry.key + '.LINK_EXTERNAL') | translate }}
+            </a>
+          </div>
+        }
         <div class="link-row">
           <a class="link-with-icon"
-             href="{{entry.externalLink}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <mat-icon>open_in_new</mat-icon>
-            {{ (entry.key + '.LINK_EXTERNAL') | translate }}
-          </a>
-        </div>
-        <div class="link-row">
-          <a class="link-with-icon"
-             href="{{entry.internalLink}}"
+             [routerLink]="['/projects']"
+             [queryParams]="{ project: entry.identifier }"
              rel="noopener noreferrer">
             <mat-icon>link</mat-icon>
             {{ (entry.key + '.LINK_INTERNAL') | translate }}
@@ -155,7 +158,7 @@
 
     <div class="xp-list">
       <div class="xp-item">
-        @for (entry of educationKeys; track entry) {
+        @for (entry of educationKeys; track entry.key) {
           <div class="head-row">
             <strong>{{ (entry.key + '.WHERE') | translate }}</strong>
             <span class="time">{{ (entry.key + '.WHEN') | translate }}</span>

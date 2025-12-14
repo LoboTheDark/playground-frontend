@@ -166,6 +166,16 @@
           "P2": "Learning to stay focused and work effectively under strict time constraints.",
           "P3": "Experiencing the joy of creating a playable game in a short timeframe and seeing others enjoy it."
         }
+      },
+      "DIPLOMA": {
+        "TITLE": "Diploma thesis - Collision detection and handling of complex garments.",
+        "DESCRIPTION": "The thesis deals with the detection and handling of collisions between and within individual items of clothing in real time. This is particularly challenging due to the flexibility of fabrics and their varying properties.",
+        "LINK_INTERNAL": "Project details",
+        "HIGHLIGHTS": {
+          "P1": "Real-time handling of collision detection and response.",
+          "P2": "Understanding and evaluating scientific papers.",
+          "P3": "Adaptation and further development of previous research work."
+        }
       }
     },
     "EDUCATION": {
@@ -204,6 +214,28 @@
         "WHEN": "1993 – 1995",
         "WHAT": "No degree (transferred to lower secondary school)"
       }
+    }
+  },
+  "PROJECTS": {
+    "PLAYGROUND": {
+      "TITLE": "Playground Website",
+      "SHORT_DESCRIPTION": "This is about this website.",
+      "INTRODUCTION": "This project was mainly started as a kind of “playground”, hence the name. The plan is to expand the site over time. New projects will appear here, or I will continue to expand the site itself because I want to try out new things in the field of web technologies."
+    },
+    "EL_MUCHO": {
+      "TITLE": "El Mucho",
+      "SHORT_DESCRIPTION": "This is about my first game on steam.",
+      "INTRODUCTION": "El Mucho is a turn-based tactical RPG set in a fictional world called Liberika. It is inspired by old classics such as Langrisser, also known as Warsong. El Mucho is about defending the world against attacks from nasty monsters."
+    },
+    "GAME_JAMS": {
+      "TITLE": "Game Jams",
+      "SHORT_DESCRIPTION": "This is about my participation at several game jams.",
+      "INTRODUCTION": "Since I am interested in game development, game jams are ideal for me to focus on new ideas and develop prototypes to see whether game ideas work or not. I have participated in several game jams over the past few years and summarise my experiences here."
+    },
+    "DIPLOMA": {
+      "TITLE": "Diploma thesis",
+      "SHORT_DESCRIPTION": "Collision detection and handling of complex garments.",
+      "INTRODUCTION": "The thesis deals with the detection and handling of collisions between and within individual items of clothing in real time. This is particularly challenging due to the flexibility of fabrics and their varying properties."
     }
   }
 }
