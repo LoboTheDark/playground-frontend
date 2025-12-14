@@ -8,6 +8,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { TranslateModule } from '@ngx-translate/core';
 import {UrlConstants} from '../../constants/UrlConstants';
 import {AssetsConstants} from '../../constants/AssetsConstants';
+import {RouterLink} from '@angular/router';
 
 
 @Component({
@@ -20,8 +21,9 @@ import {AssetsConstants} from '../../constants/AssetsConstants';
     MatIconModule,
     MatButtonModule,
     MatDividerModule,
-    TranslateModule
-],
+    TranslateModule,
+    RouterLink
+  ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
 })
@@ -71,17 +73,26 @@ export class AboutComponent {
     {
       key: 'ABOUT.PROJECT.P2',
       externalLink: 'https://andreas-dahm.eu/',
-      internalLink: 'projects'
+      internalLink: 'projects',
+      identifier: 'playground',
     },
     {
       key: 'ABOUT.PROJECT.P1',
       externalLink: 'https://store.steampowered.com/app/1532640/El_Mucho/',
-      internalLink: 'projects'
+      internalLink: 'projects',
+      identifier: 'elmucho',
     },
     {
       key: 'ABOUT.PROJECT.P0',
       externalLink: 'https://itch.io/c/6628860/lobos-collection',
-      internalLink: 'projects'
+      internalLink: 'projects',
+      identifier: 'gamejams',
+    },
+    {
+      key: 'ABOUT.PROJECT.DIPLOMA',
+      externalLink: '',
+      internalLink: 'projects',
+      identifier: 'diploma',
     }
   ];
 

@@ -1,6 +1,6 @@
-<mat-accordion class="project-headers-align" multi>
-  @for (project of allProjects; track project.title) {
-    <mat-expansion-panel>
+<mat-accordion class="project-headers-align">
+  @for (project of allProjects; track project) {
+    <mat-expansion-panel [expanded]="isExpanded(project.identifier)">
       <mat-expansion-panel-header>
         <mat-panel-title>{{ project.title | translate }}</mat-panel-title>
         <mat-panel-description>
@@ -8,7 +8,15 @@
           <mat-icon>{{ project.icon }}</mat-icon>
         </mat-panel-description>
       </mat-expansion-panel-header>
-
+      <p>{{ project.introduction | translate }}</p>
+      @if (project.images.length > 0)
+      {
+        <div class="gallery">
+          @for (img of project.images; track img) {
+            <img class="gallery-img" [src]="img" [alt]="project.title | translate" />
+          }
+        </div>
+      }
     </mat-expansion-panel>
   }
 </mat-accordion>

@@ -176,6 +176,16 @@
           "P2": "Lernen, fokussiert und effizient unter strengen Zeitvorgaben zu arbeiten.",
           "P3": "Die Freude zu erleben, in kurzer Zeit ein spielbares Projekt zu erstellen und andere damit spielen zu sehen."
         }
+      },
+      "DIPLOMA": {
+        "TITLE": "Diplomarbeit - Kollisionserkennung und Behandlung von komplexen Kleidungsstücken.",
+        "DESCRIPTION": "Die Diplomarbeit handelt von der Erkennung und der Behandlung von Kollisionen zwischen, sowie innerhalb, einzelnen Kleidungsstücken in Echtzeit. Das ist gerade aufgrund der Flexibilität von Stoffen und deren unterschiedlichen Eigenschaften besonders herausfordernd.",
+        "LINK_INTERNAL": "Projektdetails",
+        "HIGHLIGHTS": {
+          "P1": "Echtzeit behandlung von Kollisionserkennung und Behandlung.",
+          "P2": "Verstehen und Einschätzen von wissenschaftlichen Arbeiten.",
+          "P3": "Adaption und Weiterentwicklung von vorausgegangenen Forschungsarbeiten."
+        }
       }
     },
     "EDUCATION": {
@@ -219,15 +229,23 @@
   "PROJECTS": {
     "PLAYGROUND": {
       "TITLE": "Playground Website",
-      "SHORT_DESCRIPTION": "Hier geht es um diese Webseite."
+      "SHORT_DESCRIPTION": "Hier geht es um diese Webseite.",
+      "INTRODUCTION": "Dieses Projekt ist hauptsächlich als eine Art 'Spielwiese' gestartet, daher der Name. Es ist geplant, die Seite mit der Zeit weiter auszubauen. Dabei werden hier neue Projekte auftauchen, oder ich werde die Seite an für sich weiter ausbauen, weil ich neue Sachen im Rahmen von Web Technologien ausprobieren möchte."
     },
     "EL_MUCHO": {
       "TITLE": "El Mucho",
-      "SHORT_DESCRIPTION": "Hier geht es um mein ersten Spiel auf Steam."
+      "SHORT_DESCRIPTION": "Hier geht es um mein ersten Spiel auf Steam.",
+      "INTRODUCTION": "El Mucho ist ein rundenbasiertes taktisches RPG in einer fiktiven Welt namens Liberika. Es ist angelehnt an alte Klassiker wie Langrisser aka Warsong. In El Mucho geht es darum, die Welt gegen die Angriffe der fiesen Monster zu verteidigen."
     },
     "GAME_JAMS": {
       "TITLE": "Game Jams",
-      "SHORT_DESCRIPTION": "Hier geht es meine Teilnahme an mehreren Game Jams."
+      "SHORT_DESCRIPTION": "Hier geht es meine Teilnahme an mehreren Game Jams.",
+      "INTRODUCTION": "Da ich mich für die Entwicklung von Spielen interessiert, sind Game Jams für mich optimal, um fokussiert an neuen Ideen zu arbeiten und dabei Prototypen zu entwickeln, um zu sehen, ob Spielideen funktionieren oder nicht. In den letzten Jahren habe ich an einigen Game Jams teilgenommen und fasse das hier zusammen."
+    },
+    "DIPLOMA": {
+      "TITLE": "Diplomarbeit",
+      "SHORT_DESCRIPTION": "Kollisionserkennung und Behandlung von komplexen Kleidungsstücken.",
+      "INTRODUCTION": "Die Diplomarbeit handelt von der Erkennung und der Behandlung von Kollisionen zwischen, sowie innerhalb, einzelnen Kleidungsstücken in Echtzeit. Das ist gerade aufgrund der Flexibilität von Stoffen und deren unterschiedlichen Eigenschaften besonders herausfordernd."
     }
   }
 }

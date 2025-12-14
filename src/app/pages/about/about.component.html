@@ -116,18 +116,21 @@
         <div class="company-row">
           {{ (entry.key + '.DESCRIPTION') | translate }}
         </div>
+        @if (entry.externalLink) {
+          <div class="link-row">
+            <a class="link-with-icon"
+               href="{{entry.externalLink}}"
+               target="_blank"
+               rel="noopener noreferrer">
+              <mat-icon>open_in_new</mat-icon>
+              {{ (entry.key + '.LINK_EXTERNAL') | translate }}
+            </a>
+          </div>
+        }
         <div class="link-row">
           <a class="link-with-icon"
-             href="{{entry.externalLink}}"
-             target="_blank"
-             rel="noopener noreferrer">
-            <mat-icon>open_in_new</mat-icon>
-            {{ (entry.key + '.LINK_EXTERNAL') | translate }}
-          </a>
-        </div>
-        <div class="link-row">
-          <a class="link-with-icon"
-             href="{{entry.internalLink}}"
+             [routerLink]="['/projects']"
+             [queryParams]="{ project: entry.identifier }"
              rel="noopener noreferrer">
             <mat-icon>link</mat-icon>
             {{ (entry.key + '.LINK_INTERNAL') | translate }}
