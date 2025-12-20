@@ -9,6 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import {UrlConstants} from '../../constants/UrlConstants';
 import {AssetsConstants} from '../../constants/AssetsConstants';
 import {RouterLink} from '@angular/router';
+import {SharedFunctions} from '../../shared/SharedFunctions';
 
 
 @Component({
@@ -151,4 +152,5 @@ export class AboutComponent {
 
   protected readonly UrlConstants = UrlConstants;
   protected readonly AssetsConstants = AssetsConstants;
+  protected readonly SharedFunctions = SharedFunctions;
 }

@@ -5,7 +5,7 @@
   },
   "TOPBAR": {
     "ABOUT": "Über mich",
-    "CONTACT": "Kontakt",
+    "IMPRINT": "Impressum",
     "PROJECTS": "Projekte",
     "HOBBY": "Hobbies",
     "SETTINGS": "Einstellungen",
@@ -247,5 +247,11 @@
       "SHORT_DESCRIPTION": "Kollisionserkennung und Behandlung von komplexen Kleidungsstücken.",
       "INTRODUCTION": "Die Diplomarbeit handelt von der Erkennung und der Behandlung von Kollisionen zwischen, sowie innerhalb, einzelnen Kleidungsstücken in Echtzeit. Das ist gerade aufgrund der Flexibilität von Stoffen und deren unterschiedlichen Eigenschaften besonders herausfordernd."
     }
+  },
+  "IMPRINT": {
+    "TITLE" : "Impressum",
+    "PARAGRAPH": "Angaben gemäß § 5 DDG",
+    "COUNTRY": "Deutschland",
+    "CONTACT": "Kontakt"
   }
 }

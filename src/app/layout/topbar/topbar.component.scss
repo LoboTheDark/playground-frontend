@@ -2,7 +2,7 @@
   position: sticky; top: 0; z-index: 100;
   backdrop-filter: saturate(1.1) blur(8px);
   background:
-    color-mix(in oklab, var(--app-bg) 80%, transparent);
+    color-mix(in oklab, var(--app-topbar-bg) 80%, transparent);
   border-bottom: 1px solid rgba(0,0,0,.08);
 
   .brand {

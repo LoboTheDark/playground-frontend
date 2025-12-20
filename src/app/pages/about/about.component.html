@@ -27,14 +27,15 @@
         </div>
         <div class="row">
             <mat-icon aria-hidden="true">email</mat-icon>
-            <a href="" (click)="openMail($event)">
+            <a href="" (click)="SharedFunctions.openMail($event)">
               {{ 'ABOUT.CONTACT_ME' | translate }}
             </a>
         </div>
         <div class="row">
-          <mat-icon aria-hidden="true">link</mat-icon>
+          <mat-icon svgIcon="github"></mat-icon>
           <a href="{{UrlConstants.GIT_HUB}}" target="_blank" rel="noopener">GitHub</a>
           <span>·</span>
+          <mat-icon svgIcon="linkedin"></mat-icon>
           <a href="{{UrlConstants.LINKED_IN}}" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>

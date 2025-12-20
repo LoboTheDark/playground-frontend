@@ -5,7 +5,7 @@
   },
   "TOPBAR": {
     "ABOUT": "About me",
-    "CONTACT": "Contact",
+    "IMPRINT": "Impressum",
     "PROJECTS": "Projects",
     "HOBBY": "Hobby's",
     "SETTINGS": "Settings",
@@ -247,5 +247,11 @@
       "SHORT_DESCRIPTION": "Collision detection and handling of complex garments.",
       "INTRODUCTION": "The thesis deals with the detection and handling of collisions between and within individual items of clothing in real time. This is particularly challenging due to the flexibility of fabrics and their varying properties."
     }
+  },
+  "IMPRINT": {
+    "TITLE" : "Imprint",
+    "PARAGRAPH": "Information pursuant to Section 5 DDG",
+    "COUNTRY": "Germany",
+    "CONTACT": "Contact"
   }
 }

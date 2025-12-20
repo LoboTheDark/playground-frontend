@@ -23,6 +23,7 @@ $dark-theme: mat.define-theme((
 
 /* ---- Custom variables ---- */
 :root {
+  --app-topbar-bg: #{mat.get-theme-color($light-theme, surface)};
   --app-bg: #{mat.get-theme-color($light-theme, surface-container-low)};
   --app-fg: #{mat.get-theme-color($light-theme, on-surface)};
   --app-logo-bg: #313131;
@@ -43,7 +44,8 @@ $dark-theme: mat.define-theme((
   --link-color-hover: #66bfff;
 }
 .dark {
-  --app-bg: #{mat.get-theme-color($dark-theme, surface-container-low)};
+  --app-topbar-bg: #{mat.get-theme-color($dark-theme, surface-container-highest)};
+  --app-bg:  #{mat.get-theme-color($dark-theme,surface-variant)};
   --app-fg: #{mat.get-theme-color($dark-theme, on-surface)};
   --app-card-background: #313131;
   --app-logo-bg: #313131;

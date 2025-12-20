@@ -1,0 +1,40 @@
+.imprint {
+  display: grid;
+  gap: 1rem;
+}
+
+.imprint-card {
+  padding: 1.25rem 1.5rem;
+}
+
+.imprint-title {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.imprint-section {
+  display: grid;
+  gap: 0.25rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.imprint-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 0;
+}
+
+a {
+  color: var(--mat-primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
